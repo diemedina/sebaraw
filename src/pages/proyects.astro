@@ -6,41 +6,46 @@ import Layout from '../layouts/Layout.astro';
     <h3 transition:name="title">
       <a href="/sebaraw">Sebastián Pérez Delfino</a>
     </h3>
+    <div transition:name="header">
+			<a href="/sebaraw/proyects" class="active">PROYECTS</a>
+			<a href="/sebaraw/aboutme" transition:name="aboutme">ABOUT ME</a>
+			<a href="/sebaraw">CONTACT</a>
+		</div>
   </header>
   <section>
     <div>
       <a href="/sebaraw/alma">
-        <article transition:name="picture" class="alma">
+        <article transition:name="alma" class="alma">
           <div class="pill">2023</div>
         </article>
       </a>
       </a>
       <a href="/sebaraw/diadora">
-        <article class="diadora">
+        <article class="diadora" transition:name="diadora">
           <div class="pill">2023 - 2022</div>
         </article>
       </a>
       <a href="/sebaraw/espn">
-        <article class="espn">
+        <article class="espn" transition:name="espn">
           <div class="pill">2022</div>
         </article>
       </a>
       <a href="/sebaraw/bplay">
-        <article class="bplay">
+        <article class="bplay" transition:name="bplay">
           <div class="pill">2022</div>
         </article>
       <a href="/sebaraw/dorian">
-        <article class="dorian">
+        <article class="dorian" transition:name="dorian">
           <div class="pill">2022</div>
         </article>
       </a>
       <a href="/sebaraw/fx">
-        <article class="fx">
+        <article class="fx" transition:name="fx">
           <div class="pill">2022</div>
         </article>
       </a>
       <a href="/sebaraw/parafa">
-        <article class="parafa">
+        <article class="parafa" transition:name="parafa">
           <div class="pill">2022</div>
         </article>
       </a>
@@ -50,13 +55,6 @@ import Layout from '../layouts/Layout.astro';
 
 
 <style>
-  header {
-    position: fixed;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 24px 32px;
-  }
-
   h3, a {
     margin: 0;
     color:  white;
@@ -69,6 +67,7 @@ import Layout from '../layouts/Layout.astro';
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    margin: 0 auto;
   }
 
   section div {
@@ -85,6 +84,7 @@ import Layout from '../layouts/Layout.astro';
     background-size: 100%;
     background-position: center center;
     position: relative;
+    border-radius: 12px;
   }
 
   article .pill {

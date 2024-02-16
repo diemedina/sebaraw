@@ -12,7 +12,7 @@ const { title } = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
+		<meta name="description" content="Porfolio personal" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
@@ -27,9 +27,72 @@ const { title } = Astro.props;
 	html {
 		font-family: system-ui, sans-serif;
 		background: #13151a;
+		scrollbar-color: gray #13151a;
 	}
 	body {
 		margin: 0;
 		min-height: 100vh;
 	}
+
+	header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+		background: linear-gradient(180deg, #13151a75 80%, transparent);
+		backdrop-filter: blur(2px);
+		z-index: 1;
+  }
+
+  header div {
+    display: flex;
+    gap: 24px;
+  }
+
+	header div a {
+		color: white;
+		text-decoration: none;
+		opacity: .7;
+		transition: all .4s;
+	}
+
+	header div a:hover, header div a.active {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	.title-proyect {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+    width: 350px;
+    padding: 12px 0px;
+  }
+
+  .title-proyect h3 {
+    margin: 0;
+  }
+
+  .title-proyect span {
+    opacity: .6;
+  }
+
+	.container-pill {
+		display: flex;
+		gap: 8px;
+	}
+
+  .container-pill .pill {
+    border:1px solid gray;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border-radius: 8px;
+    padding: 8px;
+    width: fit-content;
+    font-weight: bold;
+  }
 </style>
