@@ -61,6 +61,10 @@ import Layout from '../layouts/Layout.astro';
     text-decoration: none;
   }
 
+  article:hover {
+    transform: scale(1.1);
+  }
+
   section {
     display: flex;
     flex-direction: column;
@@ -85,6 +89,7 @@ import Layout from '../layouts/Layout.astro';
     background-position: center center;
     position: relative;
     border-radius: 12px;
+    transition-duration: .3s;
   }
 
   article .pill {
