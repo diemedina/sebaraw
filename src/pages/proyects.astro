@@ -1,0 +1,123 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Welcome to Astro.">
+  <header>
+    <h3 transition:name="title">
+      <a href="/">Sebastián Pérez Delfino</a>
+    </h3>
+  </header>
+  <section>
+    <div>
+      <a href="/alma">
+        <article transition:name="picture" class="alma">
+          <div class="pill">2023</div>
+        </article>
+      </a>
+      </a>
+      <a href="/diadora">
+        <article class="diadora">
+          <div class="pill">2023 - 2022</div>
+        </article>
+      </a>
+      <a href="/espn">
+        <article class="espn">
+          <div class="pill">2022</div>
+        </article>
+      </a>
+      <a href="/bplay">
+        <article class="bplay">
+          <div class="pill">2022</div>
+        </article>
+      <a href="/dorian">
+        <article class="dorian">
+          <div class="pill">2022</div>
+        </article>
+      </a>
+      <a href="/fx">
+        <article class="fx">
+          <div class="pill">2022</div>
+        </article>
+      </a>
+      <a href="/parafa">
+        <article class="parafa">
+          <div class="pill">2022</div>
+        </article>
+      </a>
+    </div>
+  </section>
+</Layout>
+
+
+<style>
+  header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 32px;
+  }
+
+  h3, a {
+    margin: 0;
+    color:  white;
+    text-decoration: none;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  section div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 32px;
+  }
+
+  article {
+    width: 350px;
+    aspect-ratio: 1;
+    background: #fff;
+    background-size: 100%;
+    background-position: center center;
+    position: relative;
+  }
+
+  article .pill {
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    bottom: 8px;
+    left: 8px;
+    padding: 4px 8px;
+    border-radius: 8px;
+  }
+
+  .alma {
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/f0f22eda-0f59-4444-9bd3-d2d60f4dc65f_rwc_0x7x403x303x403.png?h=5159d919cd5f290c6f90bbe92ec364f5");
+  }
+  .espn {
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/20f237eb-2c2f-4856-a321-d3539ae9747d_rwc_0x0x2272x1704x2272.png?h=f3c78217bbdef1fba3835e5c1683d5d6");
+    background-size: cover;
+  }
+  .bplay {
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/b01d1cda-4257-40bd-8cd4-921068524fd8_rwc_242x0x1439x1080x1439.png?h=1244882933bfd9027b0846e8298cc457");
+    background-size: cover;
+  }
+  .diadora {
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/2c600675-ecbf-46dc-89bd-99fa29e00531_rwc_70x0x2205x1654x2205.png?h=793c67bb7f8aabac20bb212a7991318b");
+  }
+  .dorian {
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/d139b80f-037c-4d08-b40b-d6c721da3b9a_rwc_0x484x1500x1125x1500.png?h=d7d01eaa393e92f35f1b135a0b2d96db");
+    background-size: cover;
+  }
+  .fx {
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/51ad05e2-953e-4932-b76c-63b88bcce375_rwc_0x554x1080x810x1080.jpg?h=d096e03b3d79670a8a9b05399bb79bb2");
+  }
+  .parafa {
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/de0d793e-e5fe-4397-b010-6a443617870b_rwc_0x106x452x339x452.png?h=c65b7ede93f0af1c7a318d663f090eee");
+  }
+</style>

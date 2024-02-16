@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<h1 transition:name="title">Sebastián Pérez Delfino</h1>
+		<div>
+			<a href="/proyects">PROYECTS</a>
+			<a href="/aboutme" transition:name="aboutme">ABOUT ME</a>
+			<a href="">CONTACT</a>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		color: white;
+		font-size: 20px;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+	}
+
+	h1 {
+		font-size: 4rem;
+		font-weight: bold;
+		text-align: center;
+		margin: 0;
+	}
+
+	div {
+		display: flex;
+		gap: 40px;
+	}
+
+	a {
+		color: white;
+		text-decoration: none;
+		opacity: .7;
+		transition: all .4s;
+	}
+
+	a:hover {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+</style>

@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Welcome to Astro.">
+  <header>
+    <h3 transition:name="title">
+      <a href="/">Sebastián Pérez Delfino</a>
+    </h3>
+  </header>
+  <section>
+    <div class="title-proyect">
+      <article transition:name="picture"></article>
+      <h3>Alma en el juego</h3>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat velit accusantium, praesentium totam laborum reiciendis expedita voluptates. Distinctio repudiandae, earum sit est, unde error saepe minima molestias repellendus quia corrupti.
+      </span>
+    </div>
+    <div class="picture-proyect">
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/hFJzgH4ruKk" title="Juan Martín Hernández con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/BspTHc76C_I" title="Diego “Peque” Schwartzman con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/OmRBaKnYjLo" title="Delfi Pignatiello con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/zcqQtBP6-vo" title="Nahuel &quot;Perrito&quot; Barrios con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/uDqQkfVfR-0" title="Thiago Almada con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/3h3QGJG-Wbw" title="Agustina Gorzelany, goleadora de Las Leonas, con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/4OS0uHkx1Pw" title="Gisela Dulko con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/liAcN0d6PDY" title="Paula Pareto con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/mX5MLFt9SIc" title="Rubén Darío Insúa con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="360" height="200" src="https://www.youtube.com/embed/5gqNufXPpdY" title="Adolfo Cambiaso con Sofi Martínez en LA NACION | Alma en el Juego" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+  </section>
+</Layout>
+
+
+<style>
+  header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 32px;
+  }
+
+  h3, a {
+    margin: 0;
+    color:  white;
+    text-decoration: none;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 920px;
+    margin: 0 auto;
+  }
+
+  .title-proyect {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+    width: 350px;
+  }
+
+  .title-proyect h3 {
+    margin: 0;
+  }
+
+  .title-proyect span {
+    opacity: .6;
+  }
+
+  .picture-proyect {
+    display: grid;
+    gap: 12px;
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-color: gray #13151a;
+  }
+
+  article {
+    width: 350px;
+    aspect-ratio: 1;
+    background: #fff;
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/f0f22eda-0f59-4444-9bd3-d2d60f4dc65f_rwc_0x7x403x303x403.png?h=5159d919cd5f290c6f90bbe92ec364f5");
+    background-size: 100%;
+    background-position: center center;
+  }
+
+
+
+</style>

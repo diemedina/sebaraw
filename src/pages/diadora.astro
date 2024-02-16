@@ -1,0 +1,90 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Welcome to Astro.">
+  <header>
+    <h3 transition:name="title">
+      <a href="/">Sebastián Pérez Delfino</a>
+    </h3>
+  </header>
+  <section>
+    <div class="title-proyect">
+      <article transition:name="picture"></article>
+      <h3>Diadora</h3>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat velit accusantium, praesentium totam laborum reiciendis expedita voluptates. Distinctio repudiandae, earum sit est, unde error saepe minima molestias repellendus quia corrupti.
+      </span>
+    </div>
+    <div class="picture-proyect">
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/E3vKgFqewtP/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/-abeYhBStBs/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/FteHqR9qIYZ/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/WEBnIzIbBeF/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/ESqvewJTbA9/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/Gbe8dA3MG3Z/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+    </div>
+  </section>
+</Layout>
+
+
+<style>
+  header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 32px;
+  }
+
+  h3, a {
+    margin: 0;
+    color:  white;
+    text-decoration: none;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 920px;
+    margin: 0 auto;
+  }
+
+  .title-proyect {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+    width: 350px;
+  }
+
+  .title-proyect h3 {
+    margin: 0;
+  }
+
+  .title-proyect span {
+    opacity: .6;
+  }
+
+  .picture-proyect {
+    display: grid;
+    gap: 12px;
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-color: gray #13151a;
+  }
+
+  article {
+    width: 350px;
+    aspect-ratio: 1;
+    background: #fff;
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/2c600675-ecbf-46dc-89bd-99fa29e00531_rwc_70x0x2205x1654x2205.png?h=793c67bb7f8aabac20bb212a7991318b");
+    background-size: 100%;
+    background-position: center center;
+  }
+
+
+
+</style>

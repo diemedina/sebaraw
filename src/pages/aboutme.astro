@@ -1,0 +1,62 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Welcome to Astro.">
+  <header>
+    <h3 transition:name="title">
+      <a href="/">Sebastián Pérez Delfino</a>
+    </h3>
+  </header>
+  <section>
+    <h4 transition:name="aboutme">ABOUT ME</h4>
+    <p>
+      I am a passionate filmmaker with a robust track record in creating impactful and effective visual content. My expertise lies in the dynamic realm of social media, where I have showcased exceptional storytelling skills that captivate audiences.
+    </p>
+    <p>
+      With a creative focus and a profound understanding of digital trends, I have spearheaded television advertising campaigns and devised innovative content strategies that have elevated brand presence to new heights. My ability to seamlessly blend compelling narratives, captivating visuals, and persuasive messaging has been instrumental in achieving and surpassing marketing objectives.
+    </p>
+    <p>
+      Furthermore, I have successfully orchestrated interview series, featuring prominent personalities and establishing authentic connections with the audience. My capacity to thrive in high-pressure environments, collaborate with diverse teams, and stay abreast of the latest media trends has allowed me to stand out in the competitive field of audiovisual production.
+    </p>
+    <p>
+      I am a dedicated creator committed to visual and narrative excellence. I am excited about the opportunity to bring my expertise to new projects and contribute to the ongoing success of those I collaborate with.
+    </p>
+  </section>
+</Layout>
+
+<style>
+  header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 32px;
+  }
+
+  h3, a {
+    margin: 0;
+    color:  white;
+    text-decoration: none;
+  }
+
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 800px;
+    margin: 0 auto;
+    color: white;
+    font-size: 20px;
+  }
+
+  section h4 {
+    margin-right: auto;
+  }
+
+  section p {
+    opacity: .7;
+    margin: 8px;
+  }
+</style>
+

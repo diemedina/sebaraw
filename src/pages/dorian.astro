@@ -1,0 +1,95 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout title="Welcome to Astro.">
+  <header>
+    <h3 transition:name="title">
+      <a href="/">Sebastián Pérez Delfino</a>
+    </h3>
+  </header>
+  <section>
+    <div class="title-proyect">
+      <article transition:name="picture"></article>
+      <h3>Dorian</h3>
+      <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat velit accusantium, praesentium totam laborum reiciendis expedita voluptates. Distinctio repudiandae, earum sit est, unde error saepe minima molestias repellendus quia corrupti.
+      </span>
+    </div>
+    <div class="picture-proyect">
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/7wpw8D5S8Sx/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/PR3Ttq2UhfZ/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/Pagac-juMxP/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/U8TcnSZhmZY/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/IGqsnzk84zX/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/QoPY2Wh33FX/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/Aq7crj7gsH6/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/M2Q-wYqrxIy/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/3rAPNWLKpWx/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/-PYKQydc4PE/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+      <iframe width="400" height="720" src="https://www-ccv.adobe.io/v1/player/ccv/6HZSNRr6_2a/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View" frameborder="0"></iframe>
+    </div>
+  </section>
+</Layout>
+
+
+<style>
+  header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 32px;
+  }
+
+  h3, a {
+    margin: 0;
+    color:  white;
+    text-decoration: none;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 60px;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 920px;
+    margin: 0 auto;
+  }
+
+  .title-proyect {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    color: white;
+    width: 350px;
+  }
+
+  .title-proyect h3 {
+    margin: 0;
+  }
+
+  .title-proyect span {
+    opacity: .6;
+  }
+
+  .picture-proyect {
+    display: grid;
+    gap: 12px;
+    max-height: 600px;
+    overflow-y: auto;
+    scrollbar-color: gray #13151a;
+  }
+
+  article {
+    width: 350px;
+    aspect-ratio: 1;
+    background: #fff;
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/d139b80f-037c-4d08-b40b-d6c721da3b9a_rwc_0x484x1500x1125x1500.png?h=d7d01eaa393e92f35f1b135a0b2d96db");
+    background-size: cover;
+    background-position: center center;
+  }
+
+
+
+</style>
