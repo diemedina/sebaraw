@@ -22,16 +22,18 @@ import Header from '../components/Header.astro';
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
     color: white;
     font-size: 20px;
-    padding: 100px 0px;
+    padding: 24px 0px;
     gap: 24px;
     box-sizing: border-box;
   }
 
   section img {
+    width: 100%;
     max-width: 800px;
     transform: perspective(800px) rotateY(-8deg);
     transition: transform 1s ease 0s;
@@ -59,5 +61,20 @@ import Header from '../components/Header.astro';
     text-wrap: pretty;
     padding: 0px 24px;
   }
+
+  @media only screen and (max-width: 767px) {
+    section {
+      padding: 12px;
+      gap: 12px;
+    }
+    section img {
+      transform: perspective(0px) rotateY(0deg);
+      border-radius: 12px;
+    }
+    section p {
+      margin: 0px;
+      padding: 0px;
+    }
+	}
 </style>
 

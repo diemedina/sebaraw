@@ -11,3 +11,49 @@ const {active} = Astro.props;
 		<a href="/sebaraw/aboutme" class={active == 'BIO' ? 'active' : ''}>BIO</a>
 	</div>
 </header>
+
+<style>
+	header {
+    position: sticky;
+		top: 0;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+		background: linear-gradient(180deg, #13151a75 80%, transparent);
+		backdrop-filter: blur(2px);
+		z-index: 1;
+  }
+
+	header h3, header a {
+    margin: 0;
+    color:  white;
+    text-decoration: none;
+  }
+
+  header div {
+    display: flex;
+    gap: 24px;
+  }
+
+	header div a {
+		color: white;
+		text-decoration: none;
+		opacity: .7;
+		transition: all .4s;
+	}
+
+	header div a:hover, header div a.active {
+		opacity: 1;
+		transform: scale(1.1);
+	}
+
+	@media only screen and (max-width: 767px) {
+		header {
+			font-size: 12px;
+			align-items: center;
+			padding: 12px;
+		}
+	}
+</style>

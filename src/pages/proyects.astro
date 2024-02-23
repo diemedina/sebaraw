@@ -60,7 +60,7 @@ import Header from '../components/Header.astro';
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     margin: 0 auto;
   }
 
@@ -115,4 +115,14 @@ import Header from '../components/Header.astro';
   .parafa {
     background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/de0d793e-e5fe-4397-b010-6a443617870b_rwc_0x106x452x339x452.png?h=c65b7ede93f0af1c7a318d663f090eee");
   }
+
+  @media only screen and (max-width: 767px) {
+    section div {
+      gap: 16px;
+    }
+		article {
+      width: 350px;
+			font-size: 12px;
+		}
+	}
 </style>
