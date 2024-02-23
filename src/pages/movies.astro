@@ -1,0 +1,59 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+---
+<Layout title="Welcome to Astro.">
+  <Header active="MOVIES"></Header>
+  <section>
+    <div class="title-proyect">
+      <article></article>
+      <h3>En Casa</h3>
+      <span>
+        Cortometraje personal
+      </span>
+    </div>
+    </div>
+    <div class="picture-proyect">
+      <img src="./enCasaPremio.png" alt="En casa">
+    </div>
+  </section>
+</Layout>
+<style>
+  section {
+    padding-top: 100px;
+    display: grid;
+    grid-template-columns: 350px 1fr;
+    gap: 60px;
+    justify-content: center;
+    align-items: flex-start;
+    width: 1200px;
+    margin: 0 auto;
+  }
+
+  .picture-proyect {
+    display: grid;
+    gap: 24px;
+    padding: 12px;
+  }
+
+  .picture-proyect img {
+    width: 100%;
+    border-radius: 12px;
+    transition-duration: .3s;
+  }
+
+  .picture-proyect img:hover {
+    transform: scale(1.1);
+  }
+
+  article {
+    width: 350px;
+    aspect-ratio: 1;
+    background: #000;
+    background-image: url("./enCasa.png");
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 12px;
+  }
+</style>

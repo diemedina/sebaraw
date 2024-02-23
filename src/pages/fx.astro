@@ -1,17 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
 ---
 <Layout title="Welcome to Astro.">
-  <header>
-    <h3 transition:name="title">
-      <a href="/sebaraw">Sebastián Pérez Delfino</a>
-    </h3>
-    <div transition:name="header">
-			<a href="/sebaraw/proyects">PROYECTS</a>
-			<a href="/sebaraw/aboutme" transition:name="aboutme">ABOUT ME</a>
-			<a href="/sebaraw">CONTACT</a>
-		</div>
-  </header>
+  <Header>
+  </Header>
   <section>
     <div class="title-proyect">
       <article transition:name="fx"></article>
