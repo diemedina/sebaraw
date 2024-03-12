@@ -3,12 +3,12 @@ const {active} = Astro.props;
 ---
 <header>
 	<h3 transition:name="title">
-		<a href="/sebaraw">Sebastián Pérez Delfino</a>
+		<a href="">Sebastián Pérez Delfino</a>
 	</h3>
 	<div transition:name="header">
-		<a href="/sebaraw/proyects" class={active == 'WORK' ? 'active' : ''}>WORKS</a>
-		<a href="/sebaraw/movies" class={active == 'MOVIES' ? 'active' : ''}>MOVIE</a>
-		<a href="/sebaraw/aboutme" class={active == 'BIO' ? 'active' : ''}>BIO</a>
+		<a href="/proyects" class={active == 'WORK' ? 'active' : ''}>WORKS</a>
+		<a href="/movies" class={active == 'MOVIES' ? 'active' : ''}>MOVIE</a>
+		<a href="/aboutme" class={active == 'BIO' ? 'active' : ''}>BIO</a>
 	</div>
 </header>
 
