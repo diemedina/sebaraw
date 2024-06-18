@@ -1,4 +1,6 @@
 ---
+import { Image } from 'astro:assets';
+import luvase from '../assets/luvase.png';
 import Layout from '../layouts/Layout.astro';
 import Header from '../components/Header.astro';
 ---
@@ -6,6 +8,11 @@ import Header from '../components/Header.astro';
   <Header active="WORK"></Header>
   <section>
     <div>
+      <a href="/gota">
+        <article transition:name="gota" class="gota">
+          <div class="pill">2024</div>
+        </article>
+      </a>
       <a href="/alma">
         <article transition:name="alma" class="alma">
           <div class="pill">2023</div>
@@ -15,6 +22,12 @@ import Header from '../components/Header.astro';
       <a href="/diadora">
         <article class="diadora" transition:name="diadora">
           <div class="pill">2023 - 2022</div>
+        </article>
+      </a>
+      <a href="/luvase">
+        <article class="luvase" transition:name="luvase">
+          <Image src={luvase} alt="Luvase Logo"></Image>
+          <div class="pill">2022</div>
         </article>
       </a>
       <a href="/espn">
@@ -91,6 +104,10 @@ import Header from '../components/Header.astro';
     border-radius: 8px;
   }
 
+  .gota {
+    background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/a369d27c-411a-4f36-942c-cd8445da9a2c_rwc_0x1701x2496x1871x2496.jpg?h=d15b85bfc5137729d0c266b10faecaab");
+    background-size: cover;
+  }
   .alma {
     background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/f0f22eda-0f59-4444-9bd3-d2d60f4dc65f_rwc_0x7x403x303x403.png?h=5159d919cd5f290c6f90bbe92ec364f5");
   }
@@ -104,6 +121,13 @@ import Header from '../components/Header.astro';
   }
   .diadora {
     background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/2c600675-ecbf-46dc-89bd-99fa29e00531_rwc_70x0x2205x1654x2205.png?h=793c67bb7f8aabac20bb212a7991318b");
+  }
+  .luvase {
+    overflow: hidden;
+  }
+  .luvase img{
+    width: 350px;
+    height: 350px;
   }
   .dorian {
     background-image: url("https://cdn.myportfolio.com/30acb070-e6ba-4531-8cb8-a1b7e57144e9/d139b80f-037c-4d08-b40b-d6c721da3b9a_rwc_0x484x1500x1125x1500.png?h=d7d01eaa393e92f35f1b135a0b2d96db");
